@@ -6,7 +6,7 @@
 import os
 from optparse import OptionParser
 parser = OptionParser()
-parser.add_option("-p","--prophage",dest="prophage",help="set the prophage interaction text file",metavar="prophage interaction")  ##/home/jfh/data/Virome/Gajewski/07_interaction/gut_prophage_interaction.txt
+parser.add_option("-p","--prophage",dest="prophage",help="set the prophage interaction text file",metavar="prophage interaction")  ##filter_taxon_result.txt
 parser.add_option("-o","--output",dest="outfile",help="set the output filename",metavar="output")  ## /home/jfh/data/Virome/Gajewski/07_interaction/prophage_result.txt
 parser.add_option("-m","--namemap",dest="name2seq",help="set the name2seq mapping text file",,metavar="name mapping file") # /home/jfh/data/Virome/Gajewski/03_cdhit/prophage_virus.names.new2old.txt
 (options,args) = parser.parse_args()
