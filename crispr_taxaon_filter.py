@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # Usage: python get_unique_taxa.py -i ncbi_taxon.txt
 ## For use , it's needed to sort the ncbi_taxon file at first
-## bash : {---- less prophage_cut_flanking_to_bacterial_ncbi_taxon_id.txt |sort -k1|uniq|cut -f1,2,4,5,6|sed 's/_left//g'|sed 's/_right//g' > filter-ncbi-id.txt -----} 
+## bash : {---- less crispr_cut_flanking_to_bacterial_ncbi_taxon_id.txt |sort -k1|uniq|cut -f1,2,4,5,6|sed 's/_left//g'|sed 's/_right//g' > filter-ncbi-id.txt -----} 
 ## Also ,you need to delete the final row text ,or Error Raised
-## python ../../scripts/crispr_taxaon_filter.py -i filter-ncbi-id.txt
+## python ../../../scripts/crispr_taxaon_filter.py -i filter-ncbi-id.txt
 import os
 from collections import Counter
 from optparse import OptionParser
