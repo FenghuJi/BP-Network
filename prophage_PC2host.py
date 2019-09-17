@@ -55,5 +55,5 @@ for interact in interacts:
                 PC = seq2clu[contig2seq[contig]]
         except:
                 print("Can't find matched PC ID!")
-        outFile.write(PC+'\t'+infos[1]+'\t'+infos[4]+'\t'+infos[5].strip()+'\t'+infos[2]+'\n')
+        outFile.write(PC+'\t'+infos[1]+'\t'+infos[3]+'\t'+infos[4].strip()+'\t'+infos[2]+'\n')
 outFile.close()
